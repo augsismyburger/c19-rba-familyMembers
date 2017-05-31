@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="materialize/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <button id="showAddFam" type="button">Add Some Fam</button>
+    <div id="showFamDiv" class="container">
+        <h1>Check Yo Fam</h1>
+        <button id="writeFam" type="button">Show Yo Fam</button>
+        
+        <div id="famDiv"></div>
+    </div>
+    <div id="addFamDiv" class="container hidden">
+        <h1>Add Sum Fam</h1>
+        <form class='row'>
+            <input id="famName" type='text' placeholder="Name">
+            <input id="famAge" type="number" placeholder="44">
+            <input id="famSex" type="text" placeholder="Male/Female/Shrug">
+            <div>
+                <textarea id="famSkills" placeholder="Enter Your Fam's skills seperated by a comma"></textarea>
+            </div>
+            <button type="button" id="addFam">Add New Family Member</button>
+        </form>
+    </div>
+
+
+    <script src="materialize/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="materialize/materialize.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
